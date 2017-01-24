@@ -63,66 +63,36 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports.default = function () {
-  var element = document.createElement('h1');
+/* harmony default export */ __webpack_exports__["a"] = function () {
+  const element = document.createElement('h1');
 
   element.innerHTML = 'Hello world';
 
   return element;
 };
 
+
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__greeting__ = __webpack_require__(0);
 
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var sum = function sum(a, b) {
-    return a + b;
-};
-
-exports.default = sum;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _greeting = __webpack_require__(0);
-
-var _greeting2 = _interopRequireDefault(_greeting);
-
-var _sum = __webpack_require__(1);
-
-var _sum2 = _interopRequireDefault(_sum);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 console.log('index.js loaded');
 
-document.body.appendChild((0, _greeting2.default)());
+document.body.appendChild(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__greeting__["a" /* default */])());
 
-console.log((0, _sum2.default)(4, 5));
 
 /***/ })
 /******/ ]);

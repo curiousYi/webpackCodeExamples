@@ -1,8 +1,8 @@
 const path = require('path');
 
 const PATHS = {
-  src: path.join(__dirname, 'src'),
-  build: path.join(__dirname, 'build'),
+  src: path.join(__dirname, 'src/index'),
+  build: path.join(__dirname, 'build/index'),
 };
 
 module.exports = {

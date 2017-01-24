@@ -78,28 +78,18 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function () {
-  var element = document.createElement('h1');
+  var element = document.createElement('img');
 
-  element.innerHTML = 'Hello world';
+  element.src = "http://lorempixel.com/500/500/";
 
   return element;
 };
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var sum = function sum(a, b) {
-    return a + b;
-};
-
-exports.default = sum;
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 2 */
@@ -108,21 +98,17 @@ exports.default = sum;
 "use strict";
 
 
-var _greeting = __webpack_require__(0);
+var _imageMaker = __webpack_require__(0);
 
-var _greeting2 = _interopRequireDefault(_greeting);
+var _imageMaker2 = _interopRequireDefault(_imageMaker);
 
-var _sum = __webpack_require__(1);
-
-var _sum2 = _interopRequireDefault(_sum);
+__webpack_require__(1);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 console.log('index.js loaded');
 
-document.body.appendChild((0, _greeting2.default)());
-
-console.log((0, _sum2.default)(4, 5));
+document.body.appendChild((0, _imageMaker2.default)());
 
 /***/ })
 /******/ ]);
